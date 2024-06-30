@@ -9,15 +9,16 @@
 </head>
 <body>
     <h2>Mi Lista de Tareas</h2>
-    <form id="task-form">
-        <input type="text" id="task-input" placeholder="Agrega una nueva tarea aquí" required>
-        <button type="submit">Agregar Tarea</button>
+    <form id="forma1">
+        <input type="text" id="input-forma1" placeholder="Agrega una nueva tarea aquí" required>
+        <button type="submit" id="boton1">Agregar Tarea</button>
     </form>
 
-    <ul id="task-list" class="task-list"></ul>
+    <ul id="lista"></ul>
+
     <script>
         function addTask(taskContent) {
-            const taskList = document.getElementById('task-list');
+            const taskList = document.getElementById('lista');
             const taskItem = document.createElement('li');
         
             taskItem.textContent = taskContent;
@@ -40,10 +41,10 @@
             taskList.appendChild(taskItem);
         }
 
-        document.getElementById('task-form').onsubmit = function(event) {
+        document.getElementById('forma1').onsubmit = function(event) {
             event.preventDefault();
             
-            const taskInput = document.getElementById('task-input');
+            const taskInput = document.getElementById('input-forma1');
             
             addTask(taskInput.value);
             
@@ -52,3 +53,4 @@
     </script>
 </body>
 </html>
+

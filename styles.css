@@ -8,19 +8,19 @@ h2 {
     margin-bottom: 20px;
 }
 
-#task-form {
+#forma1 {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
 
-#task-input {
+#input-forma1{
     padding: 10px;
     font-size: 16px;
     width: 300px;
 }
 
-button {
+#boton1 {
     padding: 10px 20px;
     font-size: 16px;
     margin-left: 10px;
@@ -28,17 +28,17 @@ button {
     border-radius: 4px;
 }
 
-button:hover {
+#boton1:hover {
     background-color: #ddd;
     cursor: pointer;
 }
 
-#task-list {
+#lista {
     list-style: none;
     padding: 0;
 }
 
-#task-list li {
+#lista li {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,22 +46,22 @@ button:hover {
     border: 1px solid #ddd;
     margin-bottom: 10px;
     border-radius: 4px;
-    background-color: #333; /* Dark background color */
-    color: #fff; /* Light text color */
+    background-color: #333; 
+    color: #fff; 
 }
 
-#task-list li button {
+#lista li button {
     margin-left: 10px;
-    background-color: #444; /* Slightly lighter button color */
+    background-color: #444; 
     color: #fff;
 }
 
-#task-list li button:hover {
-    background-color: #555; /* Even lighter button color on hover */
+#lista li button:hover {
+    background-color: #555; 
 }
 
-#task-list li.completed {
+#lista li.completed {
     text-decoration: line-through;
     color: gray;
-    background-color: #555; /* Darker background for completed tasks */
+    background-color: #555; 
 }
